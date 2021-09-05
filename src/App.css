@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+    color:#fff;
+    height: 100vh;
+    width: 100%;
+    background: #333 url('./components/assets/bg1.jpg') center center / cover;
+}
+
+.inner-header{
+    color:#fff;
+    text-align: center;
+    margin-top:32px;
+    font-size:4rem;
+
+}
+.inner-header h1{
+    font-size:4rem
+}
+.inner-header a{
+    color:#222;
+}
+
+.inner-header a:hover{
+    color: #333;
+}
+.skills{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    color:#222;
+    background-color: #fff;
+}
+.skills i {
+    font-size:2rem;
+    margin:3px
+}
+
+.card{
+    width: 20rem;
+    margin: 10px;
+    border-color: rgb(44, 139, 247);
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.work{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    margin:2rem 0rem;
+
+}
+
+.footer{
+    height:5vh;
+    background-color:#222;
+    color:#fff;
+    text-align:center;
+}
+
+  
+  @media(min-width: 1200px) {
+    h1 {
+      font-size: 5rem;
+    }
+  }
+  
+  @media(max-width: 800px) {
+    .container {
+      padding: 0 1rem;
+    }
+  
+    h1 {
+      font-size: 3rem;
+    }
+  }
+  
+  @media(max-width: 500px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
