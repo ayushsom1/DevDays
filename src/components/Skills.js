@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col, Card, Image } from 'react-bootstrap'
+import { Row, Col, Card } from 'react-bootstrap'
 import dev from './assets/dev.png'
 import camera from './assets/camera.png'
 import sofft from './assets/sofft.png'
@@ -8,78 +8,59 @@ import sofft from './assets/sofft.png'
 
 const Skills = () => {
   return (
-    <div className='skills'>
+    <section id="skill-section" >
+      <div className='skills'>
 
-
-      <Container style={{
-        height: '50rem',
-        margin: '3rem',
-      }}>
-
-        <h1><strong><u><center>Skills</center></u></strong></h1>
+        <div className='navigation'>
+          <h1><strong>Skills, we have </strong></h1>
+        </div>
 
 
         <Row style={{
-          margin: '5rem',
+          margin: '2rem',
         }}>
 
-          <Col sm><Card style={{
-
-          }}>
-            <Image src={dev} rounded />
+          <Col sm><Card>
+            <Card.Img src={dev} rounded />
             <Card.Body>
               <h5><strong> Web Development </strong></h5>
               <br />
-              <h6>A Learner</h6>
+              {/* <h6>A Learner</h6> */}
             </Card.Body>
           </Card></Col>
 
-          <Col sm><Card style={{
-
-          }}>
-            <Card.Img variant="top" src={sofft} />
+          <Col sm><Card>
+            <Card.Img src={sofft} />
             <Card.Body>
               <h5><strong> Software Development </strong></h5>
               <br />
-              <h6>A Learner</h6>
+              {/* <h6>A Learner</h6> */}
             </Card.Body>
           </Card></Col>
 
-          <Col sm><Card style={{
-
-          }}>
-            <Card.Img variant="top" src={camera} />
+          <Col sm><Card>
+            <Card.Img src={camera} />
             <Card.Body>
-              <h5><strong>Passionate Photographer</strong></h5>
+              <h5><strong>Photography</strong></h5>
               <br />
-              <h6>A Learner</h6>
+              {/* <h6>A Learner</h6> */}
             </Card.Body>
           </Card></Col>
 
         </Row>
-
-        <Row style={{
-          width: '60em',
-          margin: '60px',
-        }}>
-          <Col md="auto"><h3><u><strong> Technologies Used: </strong></u></h3></Col>
-
-          <Col><i className="fab fa-js"></i></Col>
-          <Col><i className="fab fa-html5"></i></Col>
-          <Col><i className="fab fa-css3-alt"></i></Col>
-          <Col><i className="fab fa-node"></i></Col>
-          <Col><i className="fab fa-react"></i></Col>
-          <Col><i className="fab fa-sass"></i></Col>
-          <Col><i className="fab fa-php"></i></Col>
-          <Col><i className="fas fa-database"></i></Col>
-
-        </Row>
-
-      </Container>
-
-
-
-    </div>
+        <hr />
+        <div className="navigation">Technologies used</div>
+        <div id="wrapper">
+          <div className='box'><i className="fab fa-js"></i></div>
+          <div className='box'><i className="fab fa-html5"></i></div>
+          <div className='box'><i className="fab fa-css3-alt"></i></div>
+          <div className='box'><i className="fab fa-node"></i></div>
+          <div className='box'><i className="fab fa-react"></i></div>
+          <div className='box'><i className="fab fa-bootstrap"></i></div>
+        </div>
+        <hr />
+      </div >
+    </section>
   )
 }
 

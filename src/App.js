@@ -2,8 +2,7 @@ import './App.css';
 import TopBar from './components/TopBar';
 import Header from './components/Header';
 import Skills from './components/Skills';
-import Work from './components/Work';
-import Footer from './components/Footer';
+import About from './components/About';
 
 function App() {
   return (
@@ -11,8 +10,7 @@ function App() {
       <TopBar />
       <Header />
       <Skills />
-      <Work />
-      <Footer />
+      <About />
     </div>
   );
 }

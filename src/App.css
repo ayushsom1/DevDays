@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
 *{
     margin:0;
     padding:0;
@@ -7,20 +7,89 @@
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
 }
+.name{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    color: azure;
+    text-shadow: 2px 2px 4px rgb(238, 238, 180);
+    transition: transform .2s;
+    margin-top: 0vh;
+}
+.name:hover{
+    transform: scale(1.05);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 3rem;
+    color: azure;
+    text-shadow: 1px 1px 4px rgb(0, 0, 0);
+    margin-top: 0vh;
+}
 
 a{
     text-decoration: none;
 }
 
+.home{
+    background: rgba(252, 251, 244, 0.993) url('./components/assets/back1.jpg') center center / cover;
+    height: 80rem;
+}
+.wel-text{
+    font-family: 'Josefin Sans', sans-serif;
+    color:rgb(0, 0, 0);
+    letter-spacing: 1;
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+    padding: 50px;
+} 
+.socials{
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 30px;
+    margin: 20px;
+    color:rgb(91, 107, 179);
+
+}
+.profilePic{
+    width: 20rem;
+    box-shadow: 0px 4px 30px rgb(129, 179, 255);
+}
+.container{
+    padding:50px;
+}
 .header{
-  display:flex;
-  justify-content: center;
-  align-items: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.header2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     color:#fff;
     height: 100vh;
     width: 100%;
-    background: #333 url('./components/assets/bg1.jpg') center center / cover;
+    background: #333 url('./components/assets/hd.jpg') center center / cover;
 }
+
+.social-container {
+  background: #eee;
+  padding: 25px 50px;
+}
+
+.social {
+  margin: 0 1rem;  
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+.social:hover {
+  transform: translateY(-2px);
+}
+
+
 
 .inner-header{
     color:#fff;
@@ -39,10 +108,15 @@ a{
 .inner-header a:hover{
     color: #333;
 }
-.skills{
+
+
+
+
+#skill-section{
     display:flex;
     justify-content: center;
     align-items: center;
+    margin-top: 8rem;
     width:100%;
     color:#222;
     background-color: #fff;
@@ -52,12 +126,18 @@ a{
     margin:3px
 }
 
+
 .card{
-    width: 20rem;
-    margin: 10px;
-    border-color: rgb(44, 139, 247);
+    padding: 7px;
+    max-width: 250px;
+    margin: 10px 30px;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    transition: transform .3s ease;
+}
+
+.card:hover{
+  transform: scale(1.08);
 }
 
 .work{
@@ -66,39 +146,50 @@ a{
     justify-content: center;
     align-items:flex-start;
     margin:2rem 0rem;
-
 }
 
-.footer{
-    height:5vh;
-    background-color:#222;
-    color:#fff;
-    text-align:center;
+
+.navigation{
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    margin: 20px;
+} 
+
+.box{
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
 }
 
-  
-  @media(min-width: 1200px) {
-    h1 {
-      font-size: 5rem;
-    }
-  }
-  
-  @media(max-width: 800px) {
-    .container {
-      padding: 0 1rem;
-    }
-  
-    h1 {
-      font-size: 3rem;
-    }
-  }
-  
-  @media(max-width: 500px) {
-    h1 {
-      font-size: 2.5rem;
-    }
-  
-    h2 {
-      font-size: 1.5rem;
-    }
-  }
+.box:hover{
+    transform: rotate(360deg);
+}
+
+#wrapper{
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 3em;
+  gap: 10px;
+}
+#wrapper2{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns:2fr 2fr 2fr;
+  grid-template-rows: 3em;
+  gap: 10px;
+}
+.about-card{
+    width: 50rem;
+}
+.About{
+    margin-top: 60px;
+    height: 50rem;
+}
+
