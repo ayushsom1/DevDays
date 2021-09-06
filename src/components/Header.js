@@ -18,15 +18,15 @@ const Header = () => {
                 Ayush Som<hr />
                 <a
                   href="https://www.linkedin.com/in/ayushsom/"
-                  className="linkedin social"
+                  className="linkedin social" target="_blank"
                 >
                   <i class="fab fa-linkedin"></i> </a>
                 <a
                   href="https://github.com/ayushsom1"
-                  className="social"
+                  className="social" target="_blank"
                 >
                   <i class="fab fa-github"></i>                </a>
-                <a href="https://twitter.com/AyushSom6" className="twitter social">
+                <a href="https://twitter.com/AyushSom6" className="twitter social" target="_blank">
                   <i class="fab fa-twitter"></i>                </a>
               </div>
             </Zoom>
@@ -39,15 +39,15 @@ const Header = () => {
                 Harshit Sharma<hr />
                 <a
                   href="https://www.linkedin.com/in/harshit-sharma-bb36b41b5/"
-                  className="social"
+                  className="social" target="_blank"
                 >
                   <i class="fab fa-linkedin"></i> </a>
                 <a
                   href="https://github.com/harshit-sharma-gits"
-                  className="social"
+                  className="social" target="_blank"
                 >
                   <i class="fab fa-github"></i>                </a>
-                <a href="https://twitter.com/Harshit16901106" className="twitter social">
+                <a href="https://twitter.com/Harshit16901106" className="twitter social" target="_blank">
                   <i class="fab fa-twitter"></i>                </a>
               </div>
             </Zoom>
